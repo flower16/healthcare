@@ -52,6 +52,20 @@ streamlit run app.py
 Streamlit will start a local server and open the app in your browser
 (usually at http://localhost:8501).
 
+## 3. Deploy on Replit
+
+The repo ships with a `.replit` and `.streamlit/config.toml` so it runs on
+Replit with no extra setup.
+
+1. Go to [replit.com](https://replit.com) → **Create Repl** → **Import from GitHub**.
+2. Paste `https://github.com/flower16/healthcare` and import.
+3. Replit installs dependencies from `requirements.txt`. Press **Run** to preview
+   the app in the webview.
+4. Click **Deploy** → choose **Autoscale** (already set as the deployment target)
+   → **Deploy** to get a public `*.replit.app` URL.
+
+No API keys or secrets are required — the app uses synthetic data only.
+
 ## Notes
 
 - The dataset is **fully synthetic** and intended for demonstration only —
