@@ -1,0 +1,30 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ---- Secrets (none needed by this project, but guard anyway) ----
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# ---- Runtime / generated ----
+*.log
+mcp_debug.log
+
+# ---- Streamlit ----
+.streamlit/secrets.toml
+
+# ---- Editor / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp

@@ -1,15 +1,32 @@
+Hospital readmission Risk Analytics
+
 Act as an expert healthcare data scientist and full-stack Python developer. 
-I want to build a Streamlit web application that analyzes hospital readmission trends to identify high-risk patient cohorts. 
+I want to build a Streamlit web application that analyzes hospital readmission trends to 
+identify high-risk patient cohorts. 
 
 Please generate the complete Python code for an app that does the following:
 
 1. Synthetic Data Generation: Create a synthetic Pandas DataFrame representing 10,000 patient discharges. 
-Include these columns: Patient_ID, Age, Length_of_Stay (LOS), Admission_Type (Emergency, Elective, Urgent), Number_of_Comorbidities, Discharge_Department, and Readmitted_30_Days (Boolean).
+Include these columns: 
+Patient_ID, Age, 
+Length_of_Stay (LOS), 
+Admission_Type (Emergency, Elective, Urgent),
+ Number_of_Comorbidities, 
+ Discharge_Department, 
+ and Readmitted_30_Days (Boolean).
+
 2. Exploratory Data Analysis (EDA): Build interactive visualizations (using Plotly) that show:
    - Readmission rates by Admission Type and Discharge Department.
    - A correlation matrix between Length_of_Stay, Number_of_Comorbidities, and Readmissions.
-3. Predictive Modeling: Train a lightweight, interpretable machine learning model (e.g., Logistic Regression or Random Forest) to predict 30-day readmissions. 
-4. Feature Importance: Display a feature importance chart so clinicians can see which factors drive readmission risk the most.
-5. Interactive "What-If" Dashboard: Provide a sidebar where the user can adjust a patient's LOS, Age, and Comorbidities to see real-time changes in readmission risk probability.
 
-Include clean, well-commented code, instructions on how to install the required libraries (pandas, scikit-learn, streamlit, plotly), and how to run the app from the terminal.
+3. Predictive Modeling: Train a lightweight, interpretable machine learning model 
+(e.g., Logistic Regression or Random Forest) to predict 30-day readmissions. 
+
+4. Feature Importance: Display a feature importance chart so clinicians can see which factors drive 
+readmission risk the most.
+
+5. Interactive "What-If" Dashboard: Provide a sidebar where the user can adjust a patient's LOS, Age, 
+and Comorbidities to see real-time changes in readmission risk probability.
+
+Include clean, well-commented code, instructions on how to install the required libraries 
+(pandas, scikit-learn, streamlit, plotly), and how to run the app from the terminal.

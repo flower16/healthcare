@@ -1,0 +1,21 @@
+modules = ["python-3.12"]
+
+# Command Replit runs when you press "Run" in the workspace.
+run = "streamlit run app.py --server.port 8080 --server.address 0.0.0.0 --server.headless true"
+
+[nix]
+channel = "stable-24_05"
+
+# Install dependencies from requirements.txt on first boot.
+[env]
+PYTHONUNBUFFERED = "1"
+
+# Map Streamlit's internal port to the public port Replit serves on.
+[[ports]]
+localPort = 8080
+externalPort = 80
+
+# Deployment configuration (used by Replit "Deploy").
+[deployment]
+deploymentTarget = "autoscale"
+run = ["streamlit", "run", "app.py", "--server.port", "8080", "--server.address", "0.0.0.0", "--server.headless", "true"]
